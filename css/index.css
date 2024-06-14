@@ -1,0 +1,827 @@
+*{
+    padding: 0%;
+    margin: 0%;
+   
+}
+body{
+  background-image: url(../images/b1.jpg);
+  background-position: center center;
+  
+}
+
+.ad h1{
+  text-align: center;
+  color: #d38db0;
+}
+.ad h3{
+  text-align: center;
+  color: #804c4c;
+}
+.slidesall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+ul.slides {
+  display: flex;
+  width: 1300px;
+  
+  height: 90vh;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+li.slide {
+  flex: 0 0 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: white;
+  transition: transform 0.5s ease-in-out;
+}
+.slide:nth-of-type(1) {
+  background-image: url(../images/canva1.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  
+  background-position: center center;
+}
+.slide:nth-of-type(2) {
+  background-image: url(../images/canva2.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  
+  background-position: center center;
+}
+.slide:nth-of-type(3) {
+  background-image: url(../images/canva1.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+}
+.slide:nth-of-type(4) {
+  background-image: url(../images/canva2.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+}
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.research{
+  position: relative;
+  left:80%;
+  
+}
+.re1{
+  background-color: #f8f0f0;
+  width: 150px;
+  height: 36px;
+  text-align: center;
+  border-radius: 30px;
+  outline: none;
+  color: #804c4c;
+}
+.research button{
+  outline: none;
+  padding: 0 5px;
+  color: #f6f2f2;
+  background-color: #c1a181;
+  border-radius: 100px;
+}
+
+
+.logo{
+  position: relative;
+  top: 35px;
+  right: -530px
+}
+.gif{
+  border-radius: 30px;
+}
+.gif1{
+  border-radius: 30px;
+  position: relative;
+  left: 70px;
+}
+.research {
+  position: relative;
+  top:-30px ;
+ 
+}
+
+header{
+    background-color: #df9898;
+    padding: 20px;
+    margin-top:20px ;
+    border-radius: 30px;
+}
+
+header p{
+  color: #c1a181;
+  position: relative;
+  left: 30px;
+}
+header h1{
+    color: rgb(127, 85, 26);
+    position:relative;
+    left:60px;
+    top: 80px;
+    font-size: 30px;
+}
+header a{
+    color:rgb(249, 246, 246);
+    text-decoration-line:none;
+    font-size: 20px;
+    
+}
+header li{
+    position: relative;
+    
+    display: inline;
+    margin-right: 30px;
+    position:relative;
+    left:%;
+}
+
+header:hover{
+  box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.5);
+  filter: brightness(-3.5);}
+header li::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: rgb(248, 243, 243);
+  position:absolute;
+  right: 0;
+  transition:.4s;
+}
+header li:hover::after{
+  width: 100%;
+  left: 0;
+}
+
+
+
+.topic{
+    margin: 30px;
+    background-color: rgb(224, 226, 226);
+}
+
+.slogan{
+  background-color:rgb(230, 158, 129);
+  width: 100%;
+  height: 50px;
+  margin: 40px;
+}
+.slogan h1{
+  text-align: center;
+}
+.imshare{
+    background-color: (224, 226, 226);
+    width: 100%;
+    height: 400px;
+}
+.imshare h1{
+    color: #ec8e8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+.imshare h3{
+  color: #804c4c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.imshare p{
+    color: rgb(196, 123, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+  background-color: aliceblue;
+  width: 100%;
+  height: 100px;
+}
+.contact h1{
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+}
+
+
+.wrapper {
+    margin: 2;
+    padding: 20px;
+    position: relative;
+    left: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+  }
+  .box1 {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .box2 {
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .product{
+    background-image: url(../images/b2.jpg);
+    width: 1000px;
+    height: 1000px;
+   
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+    left: 170px;
+    border-radius:30px ;
+  }
+   
+  .product h1{
+    
+    color: rgb(218, 124, 124); 
+    font-size: 30px;
+   text-align: center;
+   position: relative;
+   
+   top:40px;
+   
+}
+.product h3{
+  text-align: center;
+position: relative;
+top: 50px;
+  color: #804c4c;
+}
+  footer{
+    background-color: bisque;
+    width: 90%;
+    height: 100px;
+    position: relative;
+    left: 70px;
+  }
+  footer h3{
+    color: brown;  color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+
+  }
+ 
+  .location h1{
+    color: rgb(230, 113, 113);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .wrapper {
+    display: grid;
+    grid-template-rows: 50px 250px 200px;
+    grid-template-columns: 300px 400px 200px;
+    grid-template-areas: 
+      "nav nav nav"
+      "sidebar content-01 content-02"
+      "sidebar empty content-03";
+      grid-gap:30px;
+      
+  }
+  
+  .wrapper div {
+    border: solid 1px;
+    
+  }
+  
+  .nav {
+    grid-area: nav;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+  
+  .content-01 {
+    grid-area: content-01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  
+  .content-01 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* 默认是中心，可以调整 */
+  }
+  
+  
+  
+  .content-01 img.center {
+    object-position: center; /* 将图片定位到中心（默认） */
+  }
+  
+  .content-02 {
+    grid-area: content-02;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  .content-02 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* 默认是中心，可以调整 */
+  }
+  
+  .content-02 img.center {
+    object-position: center; /* 将图片定位到中心（默认） */
+  }
+  .content-03 {
+    grid-area: content-03;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  .content-03 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* 默认是中心，可以调整 */
+  }
+  
+  .content-03 img.center {
+    object-position: center; /* 将图片定位到中心（默认） */
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .sidebar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* 默认是中心，可以调整 */
+  }
+  
+  
+  
+  .sidebar img.center {
+    object-position: center; /* 将图片定位到中心（默认） */
+  }
+  .imfor {
+    display: flex;
+    align-items: flex-start; /* 確保所有子元素頂部對齊 */
+    justify-content: center;
+    gap: 90px;
+    margin-top: 30px;
+    
+}
+
+
+.imfor img {
+    border-radius: 100px;
+}
+.imfor1 img:hover{transform:scale(1.2,1.2);}
+
+.imfor1, .imfor2, .imfor3 {
+    text-align: center; /* 使文字居中 */
+    position: relative; /* 確保這裡相對定位 */
+    width: 200px; /* 設置固定寬度，確保對齊 */
+    height: 200px; /* 設置固定高度，確保對齊 */
+    
+}
+
+.imfor1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* 確保圖片寬度適應容器 */
+    height: auto; /* 保持圖片比例 */
+    opacity: 0; /* 初始時圖片不可見 */
+    transition: opacity 1s ease-in-out; /* CSS3 淡出淡入效果, 1秒 */
+}
+
+.imfor1 img:first-of-type {
+    opacity: 1; /* 顯示第一張圖片 */
+}
+
+.imfor1:hover img:first-of-type {
+    opacity: 0; /* 懸停時第一張圖片淡出 */
+}
+
+.imfor1:hover img:nth-of-type(2) {
+    opacity: 1; /* 懸停時第二張圖片淡入 */
+}
+
+.imfor1 .p {
+    position: relative;
+    z-index: 2; /* 確保文字在圖片上面 */
+    margin-top: 220px; /* 根據需要調整文字位置 */
+}
+.imfor1 h1{
+  text-align: center;
+  color: #c1a181;
+}
+
+.c1{
+  position: relative;
+  margin-top: 330px;
+  left:130%;
+  border-radius: 100px;
+}
+
+  .runall {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    
+    
+  }
+  
+  .run1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: run1 10s linear infinite;
+    background-color:bisque;
+    font-size: 20PX;
+    padding: 20px;
+   
+  }
+  
+  .run2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: run2 10s linear infinite;
+    background-color: bisque;
+    font-size: 20PX;
+    padding: 20px;
+   
+  }
+  .run3 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: run3 10s linear infinite;
+    background-color:bisque;
+    font-size: 20PX;
+    padding: 20px;
+   
+  }
+  
+  @keyframes run1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes run2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes run3 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .all{
+    width: 1000px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+
+  .heyer{
+    position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  }
+  .hey{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  }
+  .hey img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  @keyframes fade {
+    0%, 33.33% { opacity: 1; }
+    66.66%, 100% { opacity: 0; }
+  }
+  
+  .heyer .hey:nth-child(1) {
+    animation: fade 9s infinite;
+  }
+  
+  .heyer .hey:nth-child(2) {
+    animation: fade 9s infinite 3s;
+  }
+  
+  .heyer .hey:nth-child(3) {
+    animation: fade 9s infinite 6s;
+  }
+
+  .location{
+    display:flex
+  }
+  .location{
+    position: relative;
+    left: -100px;
+  }
+  
+  .new{
+    position: relative;
+    left: 230px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  .location img{
+    width: 50%;
+    border-radius: 30px;
+   
+  }
+  .location img:hover{
+    filter:alpha(Opacity=80);mozopacity:0.8;opacity: 0.8;}
+  
+  .locationword{
+    width: 40%;
+   background-color: #ecd7d7;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+  }
+  .locationword h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+
+  }
+  .locationword h4{
+    text-align: center;
+    line-height: 2em;
+    color: #562121;
+
+  }
+
+
+.we a{
+  position: relative;
+  right: -830px;
+  top:-80px
+
+}
+.we h3{
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+
+#carousel {
+    position: relative;
+    height: 200px;
+    width: 810px;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #228291;
+    line-height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+#items-container {
+    display: flex;
+    transition: transform 1s;
+}
+
+.item {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    width: 200px;
+    height: 350px;
+    line-height: 200px;
+    background-color: #cbd5d7;
+    margin: 0 15px;
+    flex-shrink: 0;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+.pro{
+  padding: 95px;
+  
+}
+
+
+.noselect {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    left: 30px;
+   top: 50px;
+}
+.aaa{
+  position: relative;
+  left: 80px;
+  top:280px
+}
+
+.aaa:hover {
+  box-shadow: 5px 5px 20px 5px rgba(213, 112, 112, 0.5);
+    filter: brightness(-3.5);
+    border-radius: 30px;
+}
+.bbb{
+  position: relative;
+  top: -50px;
+  right:-350px}
+
+.bbb:hover{
+    box-shadow: 5px 5px 20px 5px rgba(213, 112, 112, 0.5);
+    filter: brightness(-3.5);
+    border-radius: 30px;
+}
+.ccc{
+  position: relative;
+  right: -100px;
+  top:200px
+}
+
+.ccc:hover{
+  box-shadow: 5px 5px 20px 5px rgba(204, 70, 70, 0.5);
+  filter: brightness(-3.5);
+border-radius: 30px;}
+
+.ddd{
+  position: relative;
+  left: 100px;
+  top: -300px;
+  border-radius: 30px;
+}
+.ddd:hover{
+  box-shadow: 5px 5px 20px 5px rgba(215, 98, 98, 0.5);
+  filter: brightness(-3.5);
+border-radius: 30px;}
+
+
+.four{
+  background-color: #efeaf1;
+  
+  display: flex;
+}
+
+.four:hover{
+
+  background: #e1d0b2;  /* 當滑鼠經過時，背景顏色改變 */
+  
+  }
+.four p{
+  align-items: right;
+}
+
+
+
+.info{
+  display: flex;
+  width: 40%;
+  color:#63673e ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.anfo{
+  display: flex;
+  width: 40%;
+  color: white;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.four img{
+  width:50%
+  
+}
+.red{
+  background-color: #c9babb;
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.red:hover{
+
+  background: #a69579;}
+
+  

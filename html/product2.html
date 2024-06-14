@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品詳細介紹</title>
+    <link rel="stylesheet" href="../css/product2.css">
+</head>
+<body>
+    <header>
+        <img src="../images/螢幕擷取畫面_2024-05-28_003546-removebg-preview.png" width="180px" class="draw">
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="../html/index.html">首頁</a></li>
+          <li><a href="../html/shoppingcar.html">購物車</a></li>
+          <li><a href="../html/product11.html">商品總頁</a></li>
+          <li><a href="../html/loging.html">登錄註冊</a></li>
+          <li><a href="../html/user.html">顧客資料</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="product-details">
+            <div class="product-image">
+                <img src="../images/胖胖水豚1.jpg" alt="胖胖水豚" id="main-image">
+            </div>
+            <div class="product-info">
+                <h2>胖胖水豚</h2>
+                <p class="price">$244</p>
+                <p class="description">這是一款高品質的商品，擁有優秀的性能和精美的設計。</p>
+                <button class="buy-button">立即購買</button>
+            </div>
+        </div>
+        <div class="flex_container">
+            <div class="box_normal">
+                <img src="../images/胖胖水豚2.jpg" alt="另張圖片" class="flex_image" data-image="../images/胖胖水豚2.jpg">
+            </div>
+            <div class="box_normal">
+                <img src="../images/胖胖水豚3.jpg" alt="另張圖片" class="flex_image" data-image="../images/胖胖水豚3.jpg">
+            </div>
+            <div class="review-form-container">
+                <h3>撰寫評論</h3>
+                <form class="review-form">
+                    <div class="rating">
+                        <input type="radio" name="star" id="star5" value="5"><label for="star5" class="star">★</label>
+                        <input type="radio" name="star" id="star4" value="4"><label for="star4" class="star">★</label>
+                        <input type="radio" name="star" id="star3" value="3"><label for="star3" class="star">★</label>
+                        <input type="radio" name="star" id="star2" value="2"><label for="star2" class="star">★</label>
+                        <input type="radio" name="star" id="star1" value="1"><label for="star1" class="star">★</label>
+                    </div>
+                    <textarea placeholder="在此輸入您的評論" required></textarea>
+                    <button type="submit">提交評論</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/product2.js"></script>
+</body>
+</html>
+
+

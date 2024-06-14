@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品評論頁面</title>
+    <link rel="stylesheet" href="../css/com.css">
+</head>
+<body>
+    <div class="review-container">
+        <h1>商品評論</h1>
+        <div class="reviews">
+            <h3>現有評論</h3>
+            <div class="review-list">
+                <div class="review">
+                    <p>使用者1：這個商品真的很棒！非常推薦。</p>
+                    <div class="review-stars" data-rating="5">
+                        ★★★★★
+                    </div>
+                </div>
+                <div class="review">
+                    <p>使用者2：品質非常好，物超所值。</p>
+                    <div class="review-stars" data-rating="4">
+                        ★★★★☆
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review-form-container">
+            <h3>撰寫評論</h3>
+            <form class="review-form">
+                <div class="rating">
+                    <input type="radio" name="star" id="star5" value="5"><label for="star5" class="star">★</label>
+                    <input type="radio" name="star" id="star4" value="4"><label for="star4" class="star">★</label>
+                    <input type="radio" name="star" id="star3" value="3"><label for="star3" class="star">★</label>
+                    <input type="radio" name="star" id="star2" value="2"><label for="star2" class="star">★</label>
+                    <input type="radio" name="star" id="star1" value="1"><label for="star1" class="star">★</label>
+                </div>
+                <textarea placeholder="在此輸入您的評論" required></textarea>
+                <button type="submit">提交評論</button>
+            </form>
+        </div>
+    </div>
+    <script src="../css/com.css"></script>
+</body>
+</html>

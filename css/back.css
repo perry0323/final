@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.header {
+    background-color: #d58071;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+.sidebar {
+    background-color: #dbb192;
+    color: white;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 50px; /* Adjust based on header height */
+    bottom: 0;
+    padding-top: 70px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #c66b6b;
+}
+
+.main-content {
+    margin-left: 200px; /* Same as sidebar width */
+    padding: 20px;
+    width: calc(100% - 200px);
+    margin-top: 50px; /* Same as header height */
+    overflow-y: auto;
+    padding-top: 70px; /* Add top padding to prevent content from being overlapped by sidebar */
+}
+
+.main-content section {
+    margin-bottom: 20px;
+}
+
+.orders-table, .products-table, .users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th, .orders-table td, .products-table th, .products-table td, .users-table th, .users-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.orders-table th, .products-table th, .users-table th {
+    background-color: #f2f2f2;
+}
+
+.orders-table tr:nth-child(even), .products-table tr:nth-child(even), .users-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.orders-table tr:hover, .products-table tr:hover, .users-table tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    background-color: #ecc7a2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #efbcb2;
+}
+
+#addProductForm, #addUserForm {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    display: none;
+}
+
+#addProductForm h3, #addUserForm h3 {
+    margin-top: 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin: 8px 0;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #e9b59d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #edad9a;
+}
+
+.logout {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logout a {
+    background-color: #d2a78e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout a:hover {
+    background-color: #e4a48b;
+}
+
+
