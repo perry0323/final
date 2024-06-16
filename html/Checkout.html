@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <header>
+        <a href="../html/index.html"><img src="../images/螢幕擷取畫面_2024-05-28_003546-removebg-preview.png" width="180px" class="draw"></a>
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="../html/index.html">首頁</a></li>
+                <li><a href="../html/shoppingcar.html">購物車</a></li>
+                <li><a href="../html/product11.html">商品總頁</a></li>
+                <li><a href="../html/loging.html">登錄註冊</a></li>
+                <li><a href="../html/user.html">顧客資料</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="container1">
+            <div class="circle">1</div>
+            <div class="line"></div>
+            <div class="circle2">2</div>
+            <div class="line"></div>
+            <div class="circle3">3</div>
+        </div>
+        
+        <div class="circle-text">確認購物車清單</div>
+        <div class="circle-text2">填寫購買資料</div>
+        <div class="circle-text3">購物完成</div>
+        <div class="background"></div>
+        <div class="container">
+            <div class="checktitle">
+                <span><b>購買資料</b></span>
+            </div>
+            <ul>
+                <li class="input-group">
+                    <b>收件人姓名</b>
+                    <input type="text" class="input-field" name="username" placeholder="輸入收件人姓名">
+                </li>
+                <li class="input-group">
+                    <b>收件人電話</b>
+                    <input type="text" class="input-field" name="userphone" placeholder="輸入收件人電話">
+                </li>
+            </ul>
+            <ul>
+                <div class="payway-title">
+                    <span><b>付款方式</b></span>
+                </div>
+                
+                    <div class="radio-group">
+                        <input type="radio" id="online_payment" name="payway" value="線上金融卡">
+                        <label for="online_payment">線上金融卡</label>
+                        <input type="text" class="input-field-small" name="cardnumber" placeholder="輸入卡號">
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="cash_on_delivery" name="payway" value="貨到付款">
+                        <label for="cash_on_delivery">貨到付款</label>
+                        <select name="delivery_method" class="cash-on-delivery">
+                            <option>超商</option>
+                            <option>蝦皮店到店</option>
+                            <option>宅配</option>
+                        </select>
+                    </div>
+                
+                <li class="input-group">
+                    <b>取件門市/地址</b>
+                    <textarea class="input-field-medium" name="pickup_location" placeholder="輸入取件門市/地址..." rows="4" cols="50"></textarea>
+                </li>
+            </ul>
+            <div class="submit-buttons">
+            <form action="thanks.html">
+            <input type="submit" value="確定購買">
+            </form>
+            <input type="submit" value="重新填寫">
+        </div></div>
+    </main>
+    <footer>
+        <h3>copyright WHG@2024</h3>
+    </footer>
+</body>
+</html>

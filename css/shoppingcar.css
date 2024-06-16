@@ -1,0 +1,253 @@
+/* 背景设置 */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 将背景图置于最底层 */
+    background-image: url(../images/b1.jpg); /* 背景图片路径 */
+    background-size: cover; /* 让背景图片填满整个页面 */
+    background-position: center; /* 图片居中显示 */
+}
+footer {
+    background-color: bisque;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    /* left: 70px; */
+    margin: 0; /* 確保沒有外邊距 */
+    padding: 0; /* 確保沒有內邊距 */
+  }
+  footer h3{
+    color: brown;  color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+  
+  }
+
+/* Header 样式 */
+header {
+    background-color: #df9898;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between; /* 确保 header 内部元素两端对齐 */
+    align-items: center;
+    width: 94.5%; /* 设置 header 宽度为 94.5% */
+    margin: 20px auto; /* 确保 header 居中显示 */
+}
+
+/* 图片样式 */
+.draw {
+    position: relative;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+/* 导航样式 */
+.site-navigation {
+    margin-right: 43px;
+    margin-left: auto;
+}
+
+.site-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.site-navigation ul li {
+    margin: 0 15px;
+}
+
+.site-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.site-navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 主要内容容器 */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* 调整这个值来移动所有圆形和线条的位置 */
+}
+
+/* 圆形样式 */
+.circle,
+.circle2,
+.circle3 {
+    width: 100px; /* 圆形的直径 */
+    height: 100px; /* 圆形的直径 */
+    border-radius: 50%; /* 创建圆形 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px; /* 数字的字体大小 */
+    font-weight: bold; /* 数字的字体粗细 */
+}
+
+.circle {
+    background-color: #efb7bc; /* 圆形的背景颜色 */
+    border: 2px solid rgb(127, 80, 84);
+    color: rgb(82, 80, 80); /* 数字的颜色 */
+}
+
+.circle2, .circle3 {
+    background-color: #ffffff; /* 圆形的背景颜色 */
+    border: 2px solid rgb(127, 80, 84);
+    color: rgb(82, 80, 80); /* 数字的颜色 */
+}
+
+/* 线条样式 */
+.line {
+    width: 100px; /* 连接线的宽度 */
+    height: 5px; /* 连接线的高度 */
+    background-color: #254c53; /* 连接线的颜色 */
+    margin: 0 10px; /* 连接线与圆形之间的间距 */
+}
+
+/* 圆形文字样式 */
+.circle-text,
+.circle-text2,
+.circle-text3 {
+    margin-top: 20px; /* 调整这个值来控制文字与圆形之间的距离 */
+    font-size: 16px; /* 文字的字体大小 */
+    color: black; /* 文字的颜色 */
+    text-align: center;
+}
+
+.circle-text {
+    margin-right: 440px;
+}
+
+.circle-text2 {
+    margin-top: -22px; /* 调整这个值来控制文字与圆形之间的距离 */
+    margin-right: 0px;
+}
+
+.circle-text3 {
+    margin-top: -22px; /* 调整这个值来控制文字与圆形之间的距离 */
+    margin-right: -450px;
+}
+
+/* 全局样式 */
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: auto; /* 允许垂直滚动 */
+}
+
+/* 其他内容样式 */
+.line1, .line2 {
+    width: 900px;
+    height: 2px;
+    margin-bottom: 20px;
+    background: rgb(40, 100, 88);
+}
+
+.line1 {
+    margin-top: 30px;
+}
+
+.line2 {
+    margin-top: 40px;
+}
+
+.car1, .car2 {
+    width: 800px; /* 调整宽度 */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 平均分配间距 */
+    margin-top: 10px; /* 调整 margin */
+}
+
+.picture {
+    height: 180px;
+    padding: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.name {
+    width: 300px; /* 减小名字部分的宽度 */
+    display: flex;
+    justify-content: space-between; /* 使元素平均分配 */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.n2, .n3, .price {
+    font-size: 20px; /* 调整字体大小 */
+    margin-top: 10px;
+}
+
+.qt-delete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 使元素平均分配 */
+    margin-left: 20px; /* 缩短 qt-delete 和名字之间的间距 */
+    width: auto; /* 自适应宽度 */
+    margin-top: 10px;
+}
+
+.qt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qt input[type="button"], .qt input[type="text"] {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0; /* 移除 margin 确保按钮紧邻 */
+    box-sizing: border-box; /* 确保 padding 和 border 包含在元素总宽度和高度内 */
+}
+
+.rdelete {
+    text-align: center;
+    color: white;
+    background-color: rgba(59, 59, 59, 0.733);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px; /* 添加数量控件与删除按钮之间的间距 */
+    border-radius: 5px; /* 可选：添加圆角 */
+}
+
+.rdelete:hover {
+    background-color: rgba(59, 59, 59, 0.9);
+}
+
+
+
+.submit-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding-bottom: 50px; /* 增加底部空间 */
+
+}
+
+

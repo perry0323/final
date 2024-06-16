@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商店後臺管理介面</title>
+    <link rel="stylesheet" href="../css/back.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>商店後臺管理介面</h1>
+        </header>
+        <nav class="sidebar">
+            <ul>
+               <li><a href="#orders">訂單管理</a></li>
+                <li><a href="#products">商品管理</a></li>
+                <li><a href="#users">用戶管理</a></li>
+                <li><a href="#settings">設定</a></li>
+                <li><a href="#logout">登出</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+           
+            <section id="orders">
+                <h2>客戶訂單管理</h2>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>用戶名稱</th>
+                            <th>商品名稱</th>
+                            <th>數量</th>
+                            <th>總金額</th>
+                            <th>狀態</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>李嘉欣</td>
+                            <td>卡比八啦後背包</td>
+                            <td>1</td>
+                            <td>$240</td>
+                            <td>已完成</td>
+                        </tr>
+                        <tr>
+                             <td>林沛潔</td>
+                            <td>公雞側背包</td>
+                            <td>1</td>
+                            <td>$180</td>
+                            <td>處理中</td>
+                        </tr>
+                        <!-- 更多訂單數據 -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="products">
+                <h2>商品管理</h2>
+                <button onclick="document.getElementById('addProductForm').style.display='block'">新增商品</button>
+                <div id="addProductForm" style="display:none;">
+                    <h3>新增商品</h3>
+                    <form>
+                        <label for="productName">商品名稱:</label><br>
+                        <input type="text" id="productName" name="productName"><br>
+                        <label for="productPrice">價格:</label><br>
+                        <input type="text" id="productPrice" name="productPrice"><br>
+                        <label for="productStock">庫存數量:</label><br>
+                        <input type="text" id="productStock" name="productStock"><br>
+                        <label for="productCategory">規格:</label><br>
+                        <input type="text" id="productCategory" name="productCategory"><br>
+                        <label for="productImage">圖片:</label><br>
+                        <input type="file" id="productImage" name="productImage"><br>
+                        <input type="submit" value="提交">
+                    </form>
+                </div>
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                           <th>商品名稱</th>
+                            <th>價格</th>
+                            <th>庫存數量</th>
+                            <th>規格</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <td>公雞側背包</td>
+                            <td>180</td>
+                            <td>50</td>
+                            <td>淺棕色</td>
+                            <td>
+                                <button>編輯</button>
+                                <button>刪除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>卡比八啦後背包</td>
+                            <td>$240</td>
+                            <td>30</td>
+                            <td>淺棕色</td>
+                            <td>
+                                <button>編輯</button>
+                                <button>刪除</button>
+                            </td>
+                        </tr>
+                        <!-- 更多商品數據 -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="users">
+                <h2>用戶管理</h2>
+                <button onclick="document.getElementById('addUserForm').style.display='block'">新增用戶</button>
+                <div id="addUserForm" style="display:none;">
+                    <h3>新增用戶</h3>
+                    <form>
+                        <label for="userName">用戶名稱:</label><br>
+                        <input type="text" id="userName" name="userName"><br>
+                        <label for="userEmail">電子郵件:</label><br>
+                        <input type="email" id="userEmail" name="userEmail"><br>
+                        <label for="userPassword">密碼:</label><br>
+                        <input type="password" id="userPassword" name="userPassword"><br>
+                        <label for="userRole">角色:</label><br>
+                        <select id="userRole" name="userRole">
+                            <option value="admin">管理員</option>
+                            <option value="user">普通用戶</option>
+                        </select><br>
+                        <input type="submit" value="提交">
+                    </form>
+                </div>
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>用戶編號</th>
+                            <th>用戶名稱</th>
+                            <th>電子郵件</th>
+                            <th>註冊日期</th>
+                            <th>狀態</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>林沛潔</td>
+                            <td>perry@gmail.com</td>
+                            <td>2024-03-23</td>
+                            <td>啟用</td>
+                            <td>
+                                <button>編輯</button>
+                                <button>刪除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>李加新</td>
+                            <td>sin@gmail.com</td>
+                            <td>2023-11-27</td>
+                            <td>停用</td>
+                            <td>
+                                <button>編輯</button>
+                                <button>刪除</button>
+                            </td>
+                        </tr>
+                        <!-- 更多用戶數據 -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="settings">
+    <h2>登出</h2>
+    <div class="logout">
+        <a href="#logout">登出</a>
+    </div>
+           
+        </main>
+    </div>
+    <footer>
+        <h3>copyright WHG@2024</h3>
+      </footer>
+</body>
+</html>
